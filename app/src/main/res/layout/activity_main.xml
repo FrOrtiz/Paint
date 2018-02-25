@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dam.paintdef.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <view
+        android:id="@+id/PaintArea"
+        class="com.example.dam.paintdef.PaintView"
+        id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btPath"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Path"
+        app:layout_constraintBottom_toTopOf="@+id/btFill"
+        app:layout_constraintEnd_toStartOf="@+id/btCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btRect"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Rect"
+        app:layout_constraintBottom_toTopOf="@+id/btWider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btCircle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCircle"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Circle"
+        app:layout_constraintBottom_toTopOf="@+id/btNarrow"
+        app:layout_constraintEnd_toStartOf="@+id/btRect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btPath"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btStroke"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Stroke"
+        app:layout_constraintBottom_toTopOf="@+id/btBlack"
+        app:layout_constraintEnd_toStartOf="@+id/btFill"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLine" />
+
+    <Button
+        android:id="@+id/btFill"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Fill"
+        app:layout_constraintBottom_toTopOf="@+id/btBlue"
+        app:layout_constraintEnd_toStartOf="@+id/btNarrow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btStroke"
+        app:layout_constraintTop_toBottomOf="@+id/btPath" />
+
+    <Button
+        android:id="@+id/btNarrow"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="narrow"
+        app:layout_constraintBottom_toTopOf="@+id/btRed"
+        app:layout_constraintEnd_toStartOf="@+id/btWider"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFill"
+        app:layout_constraintTop_toBottomOf="@+id/btCircle" />
+
+    <Button
+        android:id="@+id/btWider"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="wider"
+        app:layout_constraintBottom_toTopOf="@+id/btWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNarrow"
+        app:layout_constraintTop_toBottomOf="@+id/btRect" />
+
+    <Button
+        android:id="@+id/btBlack"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Black"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toStartOf="@+id/btBlue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btStroke" />
+
+    <Button
+        android:id="@+id/btBlue"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Blue"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toStartOf="@+id/btRed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBlack"
+        app:layout_constraintTop_toBottomOf="@+id/btFill" />
+
+    <Button
+        android:id="@+id/btRed"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Red"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toStartOf="@+id/btWhite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBlue"
+        app:layout_constraintTop_toBottomOf="@+id/btNarrow" />
+
+    <Button
+        android:id="@+id/btWhite"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="white"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btRed"
+        app:layout_constraintTop_toBottomOf="@+id/btWider" />
+
+    <Button
+        android:id="@+id/btLine"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:text="Line"
+        app:layout_constraintBottom_toTopOf="@+id/btStroke"
+        app:layout_constraintEnd_toStartOf="@+id/btPath"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="373dp" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/PaintArea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
